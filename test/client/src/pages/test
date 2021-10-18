@@ -1,0 +1,101 @@
+import styled from "styled-components";
+import { useContext } from "react";
+
+export default function MyComponent(props) {
+  return (
+    <Section>
+      <Div>
+        <Div2>
+          <h11>Want anything to be </h11>
+          <P>Provide a network for all your needs with ease and fun using</P>
+          <A>Get Started</A>
+        </Div2>
+        <Div3>
+          <RawImg1
+            alt="illustration"
+            image="https://laslesvpn-landing.netlify.app/images/illustration-1.svg"
+            height={383}
+            width={612}
+          />
+        </Div3>
+      </Div>
+    </Section>
+  );
+}
+
+const Section = styled.section`
+  padding-top: 100px;
+  padding-bottom: 50px;
+`;
+
+const Div = styled.div`
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  @media (max-width: 991px) {
+    flex-wrap: wrap-reverse;
+  }
+`;
+
+const Div2 = styled.div`
+  max-width: 555px;
+  width: 100%;
+  @media (max-width: 991px) {
+    max-width: none;
+  }
+`;
+
+const h11 = styled.h1`
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(11, 19, 42);
+  margin-top: 33.5px;
+  @media (max-width: 991px) {
+    font-size: 2.6rem;
+    margin-top: 17.42px;
+  }
+`;
+
+const P = styled.p`
+  margin-bottom: 30px;
+  margin-top: 20px;
+  line-height: 30px;
+`;
+
+const A = styled.a`
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-bottom: 21px;
+  padding-left: 77.5px;
+  padding-right: 77.5px;
+  padding-top: 21px;
+  width: unset;
+  background-color: rgb(245, 56, 56);
+  box-shadow: rgba(245, 56, 56, 0.35) 0px 20px 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 200ms ease 0s;
+  transition-duration: 200ms;
+  @media (max-width: 991px) {
+    padding-left: 37.5px;
+    padding-right: 37.5px;
+    width: 100%;
+  }
+`;
+
+const Div3 = styled.div`
+  width: 100%;
+`;
+
+const RawImg1 = styled(RawImg)`
+  width: 100%;
+`;

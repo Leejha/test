@@ -1,0 +1,18 @@
+<SecondSec>
+<div className = 'container'>
+    <H2Div> 
+        <H2> 상호작용하는</H2> 
+        <P> 비대면 작전 사령부는 일방향적인 시청 방식에서 벗어나 
+            상호작용 할 수 있는 
+        </P>
+        {/* <P>비대면작전사령부는 
+            코로나 팬데믹 상황에서도
+            효율적인 소통을 가능하게 해주는 플랫폼입니다.</P> */}
+    </H2Div>
+    <SecondDivImg>
+        <SecondImg src = 'remoteMeeting.jpg' />
+        {/* 화상회의 모습 보여주기? https://explore.zoom.us/ko/products/meetings/*/}
+
+    </SecondDivImg>
+</div>           
+</SecondSec>
